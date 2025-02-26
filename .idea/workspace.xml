@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b1dc61-f36c-4bac-91cc-dba31fadb832" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/projects/projects.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/projects/projects.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/projects/projects.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/projects/projects.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/project.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/project.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/project.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/cyberpunk.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/cyberpunk.scss" afterDir="false" />
-    </list>
+    <list default="true" id="c4b1dc61-f36c-4bac-91cc-dba31fadb832" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +86,7 @@
       <workItem from="1740531131748" duration="379000" />
       <workItem from="1740532172774" duration="416000" />
       <workItem from="1740532602651" duration="8184000" />
-      <workItem from="1740573287640" duration="1448000" />
+      <workItem from="1740573287640" duration="2681000" />
     </task>
     <servers />
   </component>
