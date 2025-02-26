@@ -1,0 +1,28 @@
+<div class="app-container">
+  <nav class="cyber-nav fixed top-0 w-full z-50 bg-cyber-bg bg-opacity-95">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="/" class="text-cyber-primary text-xl font-bold">TD</a>
+        <div class="flex gap-6">
+          <a *ngFor="let item of navItems" 
+             [routerLink]="item.path"
+             routerLinkActive="text-cyber-primary"
+             [routerLinkActiveOptions]="{exact: true}"
+             class="text-cyber-text hover:text-cyber-primary transition-colors">
+            {{ item.label }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-16">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="bg-cyber-bg py-8 mt-16">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-cyber-text">&copy; 2024 Thiago Duarte. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</div>

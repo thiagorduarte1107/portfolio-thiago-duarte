@@ -1,0 +1,13 @@
+.skill-card {
+  @apply bg-opacity-10 bg-white p-4 rounded-lg;
+  backdrop-filter: blur(10px);
+}
+
+.progress-bar {
+  @apply w-full h-2 bg-gray-700 rounded-full overflow-hidden;
+
+  .progress {
+    @apply h-full bg-cyber-primary transition-all duration-1000;
+    box-shadow: 0 0 10px var(--cyber-primary);
+  }
+}

@@ -1,0 +1,27 @@
+// Variáveis do tema cyberpunk
+:root {
+  --cyber-primary: #00C7FF;
+  --cyber-secondary: #FF2A6D;
+  --cyber-bg: #0F172A;
+  --cyber-surface: #1E293B;
+  --cyber-text: #CBD5E1;
+  --cyber-accent: #0ABFBC;
+  
+  --glow-shadow: 0 0 15px var(--cyber-primary);
+  --hover-transition: all 0.3s ease;
+}
+
+// Animações
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}

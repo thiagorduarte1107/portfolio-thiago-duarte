@@ -1,0 +1,16 @@
+<section class="skills-section py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-cyber-primary text-center mb-12">Habilidades Técnicas</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div *ngFor="let skill of skills" class="skill-card">
+        <div class="flex justify-between mb-2">
+          <span class="text-cyber-text">{{ skill.name }}</span>
+          <span class="text-cyber-primary">{{ skill.level }}%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress" [style.width.%]="skill.level"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

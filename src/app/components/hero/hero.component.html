@@ -1,0 +1,13 @@
+<section class="hero-section bg-cyber-bg min-h-screen flex items-center justify-center">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold mb-4 text-cyber-primary">{{ title }}</h1>
+    <p class="text-xl mb-8 text-gray-300">{{ subtitle }}</p>
+    <div class="flex gap-4 justify-center">
+      <button class="bg-[#00C7FF] px-6 py-2 rounded-lg text-cyber-bg">Ver Projetos</button>
+      <button class="border border-[#00C7FF] px-6 py-2 rounded-lg text-cyber-primary">Download CV</button>
+    </div>
+    <div class="mt-8 flex gap-4 justify-center flex-wrap">
+      <span *ngFor="let tech of techStack" class="tech-badge">{{ tech }}</span>
+    </div>
+  </div>
+</section>

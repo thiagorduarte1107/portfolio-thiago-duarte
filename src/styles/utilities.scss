@@ -1,0 +1,36 @@
+// Classes utilitárias personalizadas
+.cyber-text-glow {
+  text-shadow: 0 0 5px var(--cyber-primary);
+}
+
+.cyber-border {
+  border: 1px solid rgba(0, 199, 255, 0.2);
+  &:hover {
+    border-color: var(--cyber-primary);
+    box-shadow: var(--glow-shadow);
+  }
+}
+
+.cyber-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--cyber-bg),
+    var(--cyber-surface)
+  );
+}
+
+.glitch-effect {
+  position: relative;
+  
+  &:hover {
+    animation: glitch 0.3s infinite;
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      left: -2px;
+      text-shadow: 2px 0 var(--cyber-secondary);
+      clip: rect(44px, 450px, 56px, 0);
+      animation: glitch 0.3s infinite;
+    }
+  }
+}

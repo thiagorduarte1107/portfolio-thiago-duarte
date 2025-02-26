@@ -1,0 +1,25 @@
+.project-card {
+  @apply bg-opacity-10 bg-white rounded-lg overflow-hidden transition-all duration-300;
+  backdrop-filter: blur(10px);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 199, 255, 0.2);
+  }
+}
+
+.cyber-button {
+  @apply px-4 py-2 bg-cyber-primary text-cyber-bg rounded transition-all duration-300;
+
+  &:hover {
+    @apply shadow-glow;
+  }
+}
+
+.cyber-button-outline {
+  @apply px-4 py-2 border border-cyber-primary text-cyber-primary rounded transition-all duration-300;
+
+  &:hover {
+    @apply bg-cyber-primary text-cyber-bg;
+  }
+}
