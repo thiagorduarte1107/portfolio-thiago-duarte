@@ -1,12 +1,12 @@
 :root {
-  --neon-primary: #0ff;
-  --neon-secondary: #f0f;
-  --neon-accent: #ff0;
-  --bg-dark: #0a0a0f;
-  --bg-glass: rgba(16, 16, 24, 0.7);
+  --neon-primary: #00C7FF;
+  --neon-secondary: #00C7FF;
+  --neon-accent: #00C7FF;
+  --bg-dark: #0B1221;
+  --bg-glass: rgba(15, 23, 41, 0.8);
   --text-primary: #fff;
   --text-secondary: #a0a0a0;
-  --border-glow: 0 0 10px var(--neon-primary);
+  --border-glow: 0 0 15px var(--neon-primary);
 }
 
 body {
@@ -20,11 +20,11 @@ body {
 
 .glass-panel {
   background: var(--bg-glass);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 199, 255, 0.2);
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 199, 255, 0.15);
 }
 
 .neon-text {
@@ -45,7 +45,7 @@ body {
   
   .skill-progress {
     height: 100%;
-    background: linear-gradient(90deg, var(--neon-primary), var(--neon-secondary));
+    background: var(--neon-primary);
     box-shadow: 0 0 10px var(--neon-primary);
     transition: width 1s ease-in-out;
   }

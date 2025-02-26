@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
+import { trigger, transition, style, animate, keyframes, state } from '@angular/animations';
+import { Project, Skill } from '../../models/interfaces';
+import { ProjectService } from '../../services/project.service';
+import { SkillsService } from '../../services/skills.service';
 
 @Component({
   selector: 'app-hero',
@@ -11,42 +14,59 @@ import { trigger, transition, style, animate } from '@angular/animations';
         style({ opacity: 0, transform: 'translateY(20px)' }),
         animate('600ms ease-out')
       ])
+    ]),
+    trigger('glitchText', [
+      state('normal', style({ transform: 'none' })),
+      state('glitch', style({ transform: 'skew(0deg)' })),
+      transition('normal <=> glitch', [
+        animate('0.1s', keyframes([
+          style({ transform: 'skew(20deg)', offset: 0.2 }),
+          style({ transform: 'skew(-20deg)', offset: 0.4 }),
+          style({ transform: 'skew(0deg)', offset: 0.6 }),
+          style({ transform: 'skew(10deg)', offset: 0.8 }),
+          style({ transform: 'skew(0deg)', offset: 1 })
+        ]))
+      ])
+    ]),
+    trigger('typewriter', [
+      transition(':enter', [
+        style({ width: 0, overflow: 'hidden' }),
+        animate('1s steps(40, end)', style({ width: '100%' }))
+      ])
     ])
   ]
 })
 export class HeroComponent implements OnInit {
   title = 'Thiago Duarte';
-  subtitle = 'Desenvolvedor Java FullStack & Arquiteto de Soluções em Cloud';
-  description = 'Apaixonado por tecnologia e inovação, transformo desafios complexos em soluções eficientes e escaláveis. Com mais de 5 anos de experiência no desenvolvimento de software, atuo em projetos estratégicos para o governo e grandes empresas.';
+  subtitle = 'Software Developer';
+  description = 'Desenvolvedor Full Stack especializado em Java/Spring Boot e Angular, criando aplicações modernas e escaláveis com práticas DevOps e soluções cloud-native.';
+  glitchState = 'normal';
   
-  featuredProjects = [
-    {
-      title: 'Cadastro Nacional de Pessoas Desaparecidas (CNPD)',
-      description: 'Desenvolvimento de APIs seguras com Java 17 e Spring Boot, integração com sistemas críticos como BNBO e autenticação via Spring Security.',
-      tags: ['Java 17', 'Spring Boot', 'Angular', 'Spring Security'],
-      githubUrl: '#'
-    },
-    {
-      title: 'Animal World Pet Shop',
-      description: 'Arquitetura de microsserviços em AWS, automação de gestão de estoque e vendas, com orquestração via Kubernetes.',
-      tags: ['AWS', 'Microsserviços', 'Kubernetes', 'DevOps'],
-      githubUrl: '#'
-    }
-  ];
-  
+  featuredProjects: Project[] = [];
+  skills: Skill[] = [];
   cliText = '';
-  
-  skills = [
-    { name: 'Java', level: 90 },
-    { name: 'Spring Boot', level: 85 },
-    { name: 'Angular', level: 80 },
-    { name: 'TypeScript', level: 75 },
-    { name: 'PostgreSQL', level: 70 },
-    { name: 'Docker', level: 65 }
-  ];
+
+  constructor(
+    private projectService: ProjectService,
+    private skillsService: SkillsService
+  ) {}
 
   ngOnInit() {
+    this.loadFeaturedProjects();
+    this.loadSkills();
     this.simulateTyping('> Iniciando sistema...');
+  }
+
+  private loadFeaturedProjects() {
+    this.projectService.getFeaturedProjects().subscribe(
+      projects => this.featuredProjects = projects
+    );
+  }
+
+  private loadSkills() {
+    this.skillsService.getSkills().subscribe(
+      skills => this.skills = skills
+    );
   }
 
   private simulateTyping(text: string) {

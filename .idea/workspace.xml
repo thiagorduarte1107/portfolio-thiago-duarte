@@ -5,31 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4b1dc61-f36c-4bac-91cc-dba31fadb832" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/angular-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio-thiago-duarte.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/projects/projects.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/projects/projects.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/projects/projects.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/projects/projects.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/projects/projects.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/projects/projects.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/project.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/project.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/project.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/cyberpunk.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/cyberpunk.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +45,7 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Thiago-510/CascadeProjects/portfolio-thiago-duarte",
+    "last_opened_file_path": "E:/CNPD MJSP/cnpd-backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,7 +99,8 @@
       <workItem from="1740530483408" duration="308000" />
       <workItem from="1740531131748" duration="379000" />
       <workItem from="1740532172774" duration="416000" />
-      <workItem from="1740532602651" duration="7582000" />
+      <workItem from="1740532602651" duration="8184000" />
+      <workItem from="1740573287640" duration="1448000" />
     </task>
     <servers />
   </component>

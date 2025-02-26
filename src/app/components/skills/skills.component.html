@@ -1,61 +1,13 @@
-<div class="skills-container">
-  <div class="skill-item">
-    <div class="skill-header">
-      <span class="skill-name">Java</span>
-      <span class="skill-level">90%</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 90%"></div>
-    </div>
-  </div>
-
-  <div class="skill-item">
-    <div class="skill-header">
-      <span class="skill-name">Spring Boot</span>
-      <span class="skill-level">85%</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 85%"></div>
+<section class="skills-container" aria-label="Skills Section">
+  <div class="skills-grid">
+    <div class="skill-item" *ngFor="let skill of skills" [@skillAnimation]>
+      <div class="skill-header">
+        <span class="skill-name" role="heading" aria-level="3">{{ skill.name }}</span>
+        <span class="skill-level" aria-label="Skill level: {{skill.level}}%">{{ skill.level }}%</span>
+      </div>
+      <div class="skill-bar" role="progressbar" [attr.aria-valuenow]="skill.level" aria-valuemin="0" aria-valuemax="100">
+        <div class="skill-progress" [@progressAnimation] [style.width.%]="skill.level"></div>
+      </div>
     </div>
   </div>
-
-  <div class="skill-item">
-    <div class="skill-header">
-      <span class="skill-name">Angular</span>
-      <span class="skill-level">80%</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 80%"></div>
-    </div>
-  </div>
-
-  <div class="skill-item">
-    <div class="skill-header">
-      <span class="skill-name">TypeScript</span>
-      <span class="skill-level">75%</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 75%"></div>
-    </div>
-  </div>
-
-  <div class="skill-item">
-    <div class="skill-header">
-      <span class="skill-name">PostgreSQL</span>
-      <span class="skill-level">70%</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 70%"></div>
-    </div>
-  </div>
-
-  <div class="skill-item">
-    <div class="skill-header">
-      <span class="skill-name">Docker</span>
-      <span class="skill-level">65%</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 65%"></div>
-    </div>
-  </div>
-</div>
+</section>

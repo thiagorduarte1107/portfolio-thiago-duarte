@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { Project } from '../../models/interfaces';
+import { ProjectService } from '../../services/project.service';
 
 @Component({
   selector: 'app-projects',
@@ -14,8 +16,18 @@ import { trigger, transition, style, animate } from '@angular/animations';
     ])
   ]
 })
-export class ProjectsComponent {
-  projects = [
-    // Add your projects here
-  ];
+export class ProjectsComponent implements OnInit {
+  projects: Project[] = [];
+
+  constructor(private projectService: ProjectService) {}
+
+  ngOnInit(): void {
+    this.loadProjects();
+  }
+
+  private loadProjects(): void {
+    this.projectService.getProjects().subscribe(
+      projects => this.projects = projects
+    );
+  }
 }

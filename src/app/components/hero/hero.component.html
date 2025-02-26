@@ -1,20 +1,13 @@
 <div class="hero-section">
-  <div class="cyber-terminal" @terminalEffect>
-    <div class="cli-output">
-      <span class="cursor">{{ cliText }}</span>
-    </div>
-  </div>
-
   <div class="content-container" @terminalEffect>
-    <h1 class="title">{{ title }}</h1>
-    <p class="subtitle">{{ subtitle }}</p>
-    <p class="description">{{ description }}</p>
-    
-    <div class="button-group">
-      <button class="cyber-button primary">Ver Projetos</button>
-      <button class="cyber-button outline">Download CV</button>
+    <div class="hero-content">
+      <h1>
+        <span class="name" [@glitchText]="glitchState" (mouseenter)="glitchState = 'glitch'" (mouseleave)="glitchState = 'normal'">Thiago Duarte</span>
+        <span class="role" @typewriter>Software Developer</span>
+      </h1>
+      <p class="description" @typewriter>Desenvolvedor Full Stack especializado em Java/Spring Boot e Angular, criando aplicações modernas e escaláveis com práticas DevOps e soluções cloud-native.</p>
     </div>
-
+    
     <div class="social-links">
       <a href="https://github.com/thiagoduarte" target="_blank" class="social-link">
         <i class="fab fa-github"></i>
@@ -26,8 +19,6 @@
         <i class="fas fa-envelope"></i>
       </a>
     </div>
-
-
 
     <div class="featured-projects">
       <div class="project-grid">

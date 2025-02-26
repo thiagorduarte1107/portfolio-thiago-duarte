@@ -1,37 +1,6 @@
 <section id="projetos" class="min-h-screen bg-[#1A1A2E] text-[#CBD5E1] p-8">
   <div class="max-w-6xl mx-auto">
     <div class="grid md:grid-cols-2 gap-8">
-      <div
-        *ngFor="let project of projects"
-        class="bg-black/80 p-6 rounded-lg border border-[#00FFE0]/30 backdrop-blur relative overflow-hidden group"
-        [@fadeIn]
-      >
-        <div
-          class="absolute inset-0 bg-gradient-to-r from-[#00FFE0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-        ></div>
-        <h3 class="text-xl font-semibold mb-4 font-space text-[#00FFE0]">
-          {{ project.title }}
-        </h3>
-        <p class="mb-4 text-[#0ABFBC]">{{ project.description }}</p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span
-            *ngFor="let tech of project.technologies"
-            class="bg-[#1A1A2E] px-3 py-1 rounded-full text-sm border border-[#FF2A6D]/30 text-[#FF2A6D]"
-          >
-            {{ tech }}
-          </span>
-        </div>
-        <a
-          [href]="project.githubUrl"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-[#00FFE0] hover:text-[#FF2A6D] transition-colors flex items-center gap-2"
-        >
-          <span class="font-mono">$ git clone</span>
-          <span class="text-[#0ABFBC]">//</span>
-          <span class="text-[#FF2A6D]">acessar_codigo.exe</span>
-        </a>
-      </div>
     </div>
   </div>
 </section>

@@ -1,12 +1,108 @@
 .hero-section {
   min-height: 100vh;
-  background-color: var(--cyber-bg);
+  background-color: #0a0a0f;
   position: relative;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at center, rgba(0,199,255,0.1) 0%, rgba(10,10,15,0) 70%),
+      linear-gradient(45deg, rgba(255,0,128,0.05) 0%, rgba(10,10,15,0) 70%);
+    pointer-events: none;
+    animation: pulseBackground 8s ease infinite;
+  }
+
+  .content-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    h1 {
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      
+      .name {
+        display: block;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #00C7FF;
+        margin-bottom: 0.5rem;
+        text-shadow: 
+          0 0 10px rgba(0,199,255,0.5),
+          0 0 20px rgba(0,199,255,0.3),
+          0 0 30px rgba(0,199,255,0.2);
+        animation: glow 2s infinite;
+        position: relative;
+        &::before {
+          content: attr(data-text);
+          position: absolute;
+          left: 2px;
+          text-shadow: -2px 0 #ff00ff;
+          top: 0;
+          color: #00C7FF;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-anim 3s infinite linear alternate-reverse;
+        }
+      }
+
+      .role {
+        display: block;
+        font-size: 3rem;
+        color: #ffffff;
+        text-shadow: 
+          0 0 10px rgba(255,255,255,0.3),
+          0 0 20px rgba(255,255,255,0.2);
+        position: relative;
+        overflow: hidden;
+        font-weight: 600;
+      }
+    }
+
+    .description {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 2rem auto;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .cta-button {
+      .view-projects-btn {
+        background: #00C7FF;
+        color: #0B1221;
+        padding: 0.75rem 2rem;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.125rem;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background: #33D3FF;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
 
   .featured-projects {
     margin-top: 6rem;
