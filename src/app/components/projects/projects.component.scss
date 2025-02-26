@@ -1,25 +1,177 @@
-.project-card {
-  @apply bg-opacity-10 bg-white rounded-lg overflow-hidden transition-all duration-300;
-  backdrop-filter: blur(10px);
+.projects-section {
+  padding: 4rem 2rem;
+  background: var(--cyber-bg);
+  position: relative;
+  overflow: hidden;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(0, 199, 255, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  h2 {
+    color: var(--cyber-primary);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: var(--cyber-glow);
+  }
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--cyber-primary);
+  box-shadow: var(--cyber-shadow);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 199, 255, 0.2);
+    border-color: var(--cyber-secondary);
+    box-shadow: 0 12px 48px rgba(16, 185, 129, 0.3);
+    
+    &::before {
+      opacity: 0.8;
+      transform: translateY(-10px);
+    }
+    
+    h3 {
+      color: var(--cyber-secondary);
+      text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(0, 199, 255, 0.15), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: var(--cyber-primary);
+    box-shadow: var(--cyber-glow), 0 12px 48px rgba(0, 199, 255, 0.2);
+
+    &::before {
+      opacity: 1;
+    }
+
+    h3 {
+      color: var(--cyber-primary);
+      text-shadow: var(--cyber-glow);
+    }
+  }
+
+  h3 {
+    color: var(--cyber-text);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  p {
+    color: var(--cyber-text);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    .tech-tag {
+      background: rgba(0, 199, 255, 0.1);
+      color: var(--cyber-primary);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      border: 1px solid rgba(0, 199, 255, 0.2);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(0, 199, 255, 0.2);
+        transform: translateY(-2px);
+        box-shadow: var(--cyber-glow);
+      }
+    }
+  }
+
+  .view-project {
+    color: var(--cyber-primary);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateX(4px);
+      text-shadow: var(--cyber-glow);
+    }
+
+    &::after {
+      content: '→';
+      transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+      transform: translateX(4px);
+    }
   }
 }
 
-.cyber-button {
-  @apply px-4 py-2 bg-cyber-primary text-cyber-bg rounded transition-all duration-300;
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 
-  &:hover {
-    @apply shadow-glow;
+  .tech-tag {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--vibrant-green);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(16, 185, 129, 0.2);
   }
 }
 
-.cyber-button-outline {
-  @apply px-4 py-2 border border-cyber-primary text-cyber-primary rounded transition-all duration-300;
+.view-project {
+  color: var(--vibrant-green);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
 
   &:hover {
-    @apply bg-cyber-primary text-cyber-bg;
+    transform: translateX(4px);
+    text-shadow: var(--glow-effect);
   }
 }

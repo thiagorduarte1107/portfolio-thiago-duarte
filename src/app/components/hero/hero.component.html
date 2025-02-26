@@ -1,13 +1,45 @@
-<section class="hero-section bg-cyber-bg min-h-screen flex items-center justify-center">
-  <div class="container mx-auto px-4 text-center">
-    <h1 class="text-4xl font-bold mb-4 text-cyber-primary">{{ title }}</h1>
-    <p class="text-xl mb-8 text-gray-300">{{ subtitle }}</p>
-    <div class="flex gap-4 justify-center">
-      <button class="bg-[#00C7FF] px-6 py-2 rounded-lg text-cyber-bg">Ver Projetos</button>
-      <button class="border border-[#00C7FF] px-6 py-2 rounded-lg text-cyber-primary">Download CV</button>
-    </div>
-    <div class="mt-8 flex gap-4 justify-center flex-wrap">
-      <span *ngFor="let tech of techStack" class="tech-badge">{{ tech }}</span>
+<div class="hero-section">
+  <div class="cyber-terminal" @terminalEffect>
+    <div class="cli-output">
+      <span class="cursor">{{ cliText }}</span>
     </div>
   </div>
-</section>
+
+  <div class="content-container" @terminalEffect>
+    <h1 class="title">{{ title }}</h1>
+    <p class="subtitle">{{ subtitle }}</p>
+    <p class="description">{{ description }}</p>
+    
+    <div class="button-group">
+      <button class="cyber-button primary">Ver Projetos</button>
+      <button class="cyber-button outline">Download CV</button>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/thiagoduarte" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/thiagoduarte" target="_blank" class="social-link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:contato@thiagoduarte.dev" class="social-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+
+
+    <div class="featured-projects">
+      <div class="project-grid">
+        <div class="project-card" *ngFor="let project of featuredProjects">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <div class="tech-tags">
+            <span class="tech-tag" *ngFor="let tag of project.tags">{{ tag }}</span>
+          </div>
+          <a [href]="project.githubUrl" class="view-project" *ngIf="project.githubUrl">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

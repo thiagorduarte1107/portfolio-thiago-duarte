@@ -1,13 +1,111 @@
-.skill-card {
-  @apply bg-opacity-10 bg-white p-4 rounded-lg;
-  backdrop-filter: blur(10px);
+.skills-container {
+  padding: 1rem;
+  background: var(--bg-glass);
+  border-radius: 8px;
+  border: 1px solid var(--neon-primary);
+  box-shadow: var(--border-glow);
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  
+  @media (min-width: 640px) {
+    padding: 2rem;
+  }
+}
+
+.skill-item {
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease forwards;
+  
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  color: var(--neon-primary);
+  font-size: 1rem;
+  font-family: 'Fira Code', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 5px var(--neon-primary);
+  
+  &::before {
+    content: '';
+    margin-right: 0.5rem;
+    color: var(--neon-secondary);
+  }
+}
+
+.skill-level {
+  color: var(--neon-secondary);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  text-shadow: 0 0 5px var(--neon-secondary);
+  
+  @media (min-width: 640px) {
+    font-size: 1.1rem;
+  }
 }
 
 .progress-bar {
-  @apply w-full h-2 bg-gray-700 rounded-full overflow-hidden;
+  height: 6px;
+  background: var(--bg-glass);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  @media (min-width: 640px) {
+    height: 8px;
+  }
+}
 
-  .progress {
-    @apply h-full bg-cyber-primary transition-all duration-1000;
-    box-shadow: 0 0 10px var(--cyber-primary);
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-primary), var(--neon-secondary));
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 1s ease-out;
+  box-shadow: 0 0 10px var(--neon-primary);
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

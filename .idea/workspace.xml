@@ -4,11 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b1dc61-f36c-4bac-91cc-dba31fadb832" name="Changes" comment="" />
+    <list default="true" id="c4b1dc61-f36c-4bac-91cc-dba31fadb832" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/angular-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-thiago-duarte.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/projects/projects.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/projects/projects.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/projects/projects.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/projects/projects.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/projects/projects.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/projects/projects.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/skills/skills.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/skills/skills.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -18,29 +47,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JavaScript Debug.Angular Application.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Thiago-510/CascadeProjects/portfolio-thiago-duarte",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "C:/Program Files/nodejs/node",
+    "nodejs_package_manager_path": "npm",
+    "npm.Angular CLI Server.executor": "Run",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="portfolio-thiago-duarte" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+}]]></component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="portfolio-thiago-duarte" />
-      <option name="filePath" />
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="$PROJECT_DIR$/../../../../Program Files/nodejs/node.exe" />
+      <package-manager value="C:\Program Files\nodejs\npm.cmd" />
+      <envs />
       <method v="2" />
     </configuration>
   </component>
@@ -68,6 +109,9 @@
       <workItem from="1740530272620" duration="103000" />
       <workItem from="1740530395512" duration="72000" />
       <workItem from="1740530483408" duration="308000" />
+      <workItem from="1740531131748" duration="379000" />
+      <workItem from="1740532172774" duration="416000" />
+      <workItem from="1740532602651" duration="7582000" />
     </task>
     <servers />
   </component>
