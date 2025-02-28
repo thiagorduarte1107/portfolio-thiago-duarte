@@ -5,8 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --base-href /portfolio-thiago-duarte/ --deploy-url /portfolio-thiago-duarte/",
-    "deploy": "ng build --configuration production --base-href /portfolio-thiago-duarte/ --deploy-url /portfolio-thiago-duarte/ && npx angular-cli-ghpages --dir=docs",
+    "build": "ng build",
+    "build:prod": "ng build --configuration production",
+    "build:pages": "ng build --configuration production --base-href /portfolio-thiago-duarte/",
+    "deploy:pages": "ng build --configuration production --base-href /portfolio-thiago-duarte/ && npx angular-cli-ghpages --dir=docs",
     "lint": "ng lint"
   },
   "dependencies": {
