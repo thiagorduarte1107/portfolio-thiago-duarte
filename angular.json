@@ -45,8 +45,6 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "baseHref": "/portfolio-thiago-duarte/",
-              "deployUrl": "/portfolio-thiago-duarte/",
               "budgets": [
                 {
                   "type": "initial",
