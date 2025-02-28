@@ -27,7 +27,7 @@ jobs:
         run: npm install -g @angular/cli@latest
 
       - name: Build
-        run: ng build --configuration production
+        run: npm run build
 
       - name: Copy index.html to 404.html
         run: cp dist/portfolio-thiago-duarte/index.html dist/portfolio-thiago-duarte/404.html
