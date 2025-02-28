@@ -21,13 +21,16 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Install Angular CLI
         run: npm install -g @angular/cli@latest
 
       - name: Build
-        run: ng build --prod --base-href https://thiagorduarte1107.github.io/portfolio-thiago-duarte/
+        run: ng build --configuration production
+
+      - name: Copy index.html to 404.html
+        run: cp dist/portfolio-thiago-duarte/index.html dist/portfolio-thiago-duarte/404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
