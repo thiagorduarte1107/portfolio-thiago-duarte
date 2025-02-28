@@ -40,6 +40,6 @@ jobs:
       - name: Verify Deployment
         run: |
           echo "Deployment completed! Your site should be available at:"
-          echo "https://thiagoquarte107.github.io/portfolio-thiago-duarte/"
+          echo "https://thiagorduarte1107.github.io/portfolio-thiago-duarte/"
           echo "Please allow a few minutes for the changes to propagate."
           echo "You can check the deployment status in the 'Actions' tab of your repository."
