@@ -21,10 +21,12 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/portfolio-thiago-duarte",
-            "index": "index.html",
+            "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.json",
+            "baseHref": "/portfolio-thiago-duarte/",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets",
@@ -34,12 +36,40 @@
               "src/styles.scss"
             ],
             "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "portfolio-thiago-duarte:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "portfolio-thiago-duarte:build:production"
+            }
           }
         }
       }

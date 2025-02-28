@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+*.iml
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Misc
+.sass-cache/
+connect.lock
+coverage/
+libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Angular cache
+.angular/cache
+.angular/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
