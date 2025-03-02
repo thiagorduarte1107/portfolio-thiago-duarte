@@ -65,7 +65,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "portfolio-thiago-duarte:build"
+            "browserTarget": "portfolio-thiago-duarte:build",
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
